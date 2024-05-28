@@ -19,7 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn('bg-background text-gray-300', font.className)}>
         <Lateral />
-        <main className="pl-[13vw]"> {children} </main>
+        <main className="pl-[13vw] container mx-auto py-5 lg:py-8"> 
+          {children} 
+        </main>
       </body>
     </html>
   );

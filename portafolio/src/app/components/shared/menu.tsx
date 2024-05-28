@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { RiAccountBoxLine, RiStackFill, RiContactsFill, RiEditFill } from "react-icons/ri";
+import { RiAccountBoxLine, RiStackFill, RiAccountPinBoxFill, RiEditFill } from "react-icons/ri";
 import { cn } from "../../../../libs/utils";
 
 const Menu = () => { 
@@ -16,8 +16,8 @@ const Menu = () => {
         href: '/proyectos',
       },
       {
-        label: 'Contactame',
-        icono: RiContactsFill,
+        label: 'Contacto',
+        icono: RiAccountPinBoxFill,
         href: '/contactame',
       },
       {
@@ -34,7 +34,7 @@ const Menu = () => {
                     <Link 
                         key={ruta.href} 
                         href={ruta.href} 
-                        className={cn('flex items-center gap-4 text-purple-300 p-5 border-b border-gray-300/30')}
+                        className={cn('flex items-center gap-4 text-purple-300 py-5 px-8 border-b border-gray-300/30 hover:bg-gray-500/20 hover:text-white transition-colors duration-300')}
                     > 
                         <ruta.icono size={21}/>
                         {ruta.label}
