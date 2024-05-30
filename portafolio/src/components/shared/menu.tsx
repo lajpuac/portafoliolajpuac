@@ -1,5 +1,6 @@
 import { cn } from "@/libs/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { RiAccountBoxLine, RiStackFill, RiBook2Fill, RiEditFill } from "react-icons/ri";
 
 const Menu = () => { 
@@ -27,6 +28,8 @@ const Menu = () => {
       },
     ];
 
+    const pathname = usePathname();
+
     return (
         <ul>
             <li>
@@ -34,8 +37,9 @@ const Menu = () => {
                     <Link 
                         key={ruta.href} 
                         href={ruta.href} 
-                        className={cn('flex items-center gap-4 text-purple-300 py-5 px-8 border-b border-gray-300/30 hover:bg-gray-500/20 hover:text-white transition-colors duration-300')}
-                    > 
+                        className={cn(
+                          'flex items-center gap-4 text-purple-300 py-5 px-8 border-b border-gray-300/30 hover:bg-gray-500/20 hover:text-white transition-colors duration-300', pathname === ruta.href && 'text-white')}
+                        > 
                         <ruta.icono size={21}/>
                         {ruta.label}
                     </Link>

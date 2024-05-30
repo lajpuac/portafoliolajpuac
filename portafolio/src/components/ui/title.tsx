@@ -1,10 +1,12 @@
+import { cn } from "@/libs/utils";
 import React from "react";
 
-interface TitlePros {
+interface TitleProps {
     title: string;
+    className ? : string;
 }
 
-const Title = ({title}: TitlePros) => {
-	return <h1 className="text-3xl font-light text-white my-10">{title}</h1>;
+const Title = ({title, className}: TitleProps) => {
+	return <h1 className={cn('text-3xl font-light text-white my-10', className)}>{title}</h1>;
 }
 export default Title;

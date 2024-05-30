@@ -15,7 +15,7 @@ const Lateral = ({showMenu, onClose}: LateralProps) => {
     return (
         <>
             <aside className={cn(
-                "fixed top-0 lg:left-0 bg-background w-[70vw] md:w-[30vw] lg:w-[13vw] h-full border-r border-gray-300/30 transition-all duration-300 ease-in-out z-50", 
+                "fixed top-0 lg:left-0 bg-background w-[70vw] md:w-[30vw] lg:w-[20vw] xl:w-[13vw] h-full border-r border-gray-300/30 transition-all duration-300 ease-in-out z-50", 
                 showMenu ? 'left-0' : '-left-full'
                 )}
             >
