@@ -5,6 +5,6 @@ interface TitlePros {
 }
 
 const Title = ({title}: TitlePros) => {
-	return <h1 className="text-3xl font-light text-white my-6">{title}</h1>;
+	return <h1 className="text-3xl font-light text-white my-10">{title}</h1>;
 }
 export default Title;

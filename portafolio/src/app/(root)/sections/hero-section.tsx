@@ -20,10 +20,10 @@ const HeroSection= () => {
                 </div>
                 <div  className="max-w-3xl">
                     <h1 className='text-3xl text-white'>
-                        {`¡Hola! Soy Leysi y quiero convertirme en programadora Frontend`}
+                        {`¡Hola! Soy Leysi y quiero convertirme en desarrolladora Frontend`}
                     </h1>
                     <p className="rext-gray-500">
-                        Soy estudiante de Ingeniería en Sistemas con gusto por el desarrollo de software y diseño de interfaces, aprendiendo continuamente, aplico mis conocimientos a los diferentes proyectos.
+                        Soy estudiante de Ingeniería en Sistemas con gusto por el desarrollo de frontend y diseño de interfaces, aprendiendo continuamente, aplico mis conocimientos a los diferentes proyectos.
                     </p>
                 </div>
                 <div className="flex items-center gap-4">
@@ -36,9 +36,9 @@ const HeroSection= () => {
                     ))}
                 </div>
                 <div>
-                    <h1 className="text-base">Contacto:</h1>
+                    <h1 className="text-xl text-white">Contacto</h1>
                     <h3>gmail: lucilaajpuac@gmail.com</h3>
-                    <h3>telefono: 41216374</h3>
+                    <h3>teléfono: 4121 6374</h3>
 
                 </div>             
               </div>
