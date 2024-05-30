@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Arimo } from "next/font/google";
 import "./globals.css";
-import Lateral from "./components/shared/lateral";
 import { ReactNode } from "react";
 import { cn } from "../../libs/utils";
 
@@ -18,8 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn('bg-background text-gray-300', font.className)}>
-        <Lateral />
-        <main className="pl-[13vw] container mx-auto py-5 lg:py-8"> 
+        <main className="lg:pl-[13vw] px-5 lg:px-0 container mx-auto py-5 lg:py-8"> 
           {children} 
         </main>
       </body>
