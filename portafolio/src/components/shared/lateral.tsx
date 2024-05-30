@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import Menu from "@/app/components/shared/menu";
-import { cn } from "../../../../libs/utils";
+import Menu from "@/components/shared/menu";
+import { cn } from "@/libs/utils";
 
 interface LateralProps  {
     showMenu: boolean;

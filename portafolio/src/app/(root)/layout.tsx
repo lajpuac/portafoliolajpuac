@@ -1,7 +1,7 @@
 'use client';
 
 import { ReactNode, useState } from "react";
-import Lateral from "@/app/components/shared/lateral";
+import Lateral from "@/components/shared/lateral";
 import { RiMenuUnfold2Line } from "react-icons/ri";
 
 

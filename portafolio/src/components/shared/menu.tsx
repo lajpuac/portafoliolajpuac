@@ -1,6 +1,6 @@
+import { cn } from "@/libs/utils";
 import Link from "next/link";
-import { RiAccountBoxLine, RiStackFill, RiAccountPinBoxFill, RiEditFill } from "react-icons/ri";
-import { cn } from "../../../../libs/utils";
+import { RiAccountBoxLine, RiStackFill, RiBook2Fill, RiEditFill } from "react-icons/ri";
 
 const Menu = () => { 
 
@@ -16,9 +16,9 @@ const Menu = () => {
         href: '/proyectos',
       },
       {
-        label: 'Contacto',
-        icono: RiAccountPinBoxFill,
-        href: '/contactame',
+        label: 'Educación',
+        icono: RiBook2Fill,
+        href: '/educacion',
       },
       {
         label: 'Blog',
